@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Week 4 Homework</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div id="head" class="col-9">
+            CrystalsCollector!
+        </div>
+    </div>
+</div>
+        
+        <div id="p1" class="col-6">
+            You will be givien a random number at the start of the game.
+            <br>
+            There are four crystals below. By clicking on a crystal you
+            will add a specific amount of points to your total score.
+            <br>
+            You win the game by matching your total score to random 
+            number, you lose the game if your score goes above the random number.
+            <br>
+            The value of each crystal is hidden from you until you click on it. 
+            <br>
+            Each time when the game starts, the game will change the values of each crystal.
+        </div>
+
+
+    <div class="row box">
+        <div class="row">
+            <h2>Target Score: </h2>
+            <span id="scoreTarget"></span>
+        </div>
+    </div>
+
+    <div class="winLoss">
+            <h2>Wins:
+                <span id="wins"></span> <br>
+                Losses: 
+                <span id="losses"></span>
+            </h2>
+        </div>
+
+    <div class="container"> 
+        <button class="button" id="red" src="assets/images/red.PNG">
+            </button>
+        <button class="button" id="blue" src="assets/images/blue.PNG">
+            </button>
+        <button class="button" id="green" src="assets/images/green.PNG">
+            </button>
+        <button class="button" id="purple" src="assets/images/purple.PNG"> </button>
+    </div>
+    
+    <div class="row">
+        <div id="userScore">Your total score is: </div>
+    </div>
+
+
+    <div id="currentPoints">
+        <div id="currentScore"></div>
+    </div> 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
